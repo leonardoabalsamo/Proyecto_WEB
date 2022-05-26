@@ -1,0 +1,507 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+main{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 83vh;
+}
+
+
+
+
+p, li{
+    font-size: 1.0vw;
+
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+
+.text p {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    margin: 0px;
+    padding:0%;
+    animation: cambiarColor 3s infinite alternate;
+    -webkit-animation: cambiarColor 3s linear infinite alternate;
+    -moz-animation: cambiarColor 3s linear infinite alternate;
+    -o-animation: cambiarColor 3s linear infinite alternate;
+}
+
+/* Pagina Principal */
+
+.divGrid{
+    width: 100vw;
+    height:76.95vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: "uno uno uno" 
+                         "uno uno uno" 
+                         "uno uno uno" 
+                         "uno uno uno";
+    align-items: center;
+    padding-left: 5%;
+
+}
+
+.divGridPrincipal{
+    
+    width: 90vw;
+    height:77vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.divGridAnimacion{
+    width: 100vw;
+    height:76.95vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas:    "uno uno uno uno uno" 
+                            "uno uno uno uno uno"  
+                            "uno uno uno uno uno" 
+                            "uno uno uno uno uno"  
+                            "uno uno uno uno uno"  
+                            "uno uno uno uno uno"  
+                         ;
+    align-items: center;
+    padding-left: 5%;
+
+}
+.divIntGrid{
+    width: 30vw;
+    height:20vh;
+    background-color: transparent;
+    align-content: center;
+    padding: 1%;
+    opacity: 0.3;
+    border-radius: 5%;
+}
+.divIntGrid:hover{    
+    opacity: 0.8;
+}
+
+.divIntGrid a img{
+    width: 15vw;
+    height:15vh;
+    border-radius: 50%; 
+    border: solid black 1px; 
+}
+
+
+.divIntGrids img {
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+    width:50%;
+    }
+    .divIntGrids:hover {
+        -webkit-transform:scale(1.25);
+        -moz-transform:scale(1.25);
+        -ms-transform:scale(1.25);
+        -o-transform:scale(1.25);
+        transform:scale(1.25);
+        opacity: 1;
+        -webkit-transition:all 2s ease; /* Safari y Chrome */
+        -moz-transition:all 2s ease; /* Firefox */
+        -o-transition:all 2s ease; /* IE 9 */
+        -ms-transition:all 2s ease; /* Opera */
+    }
+
+    .divIntGrids {
+        width: 25vw;
+        height:24vh;
+        background-color: #e6eeee;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5%;
+        padding: 1%;
+        opacity: 0.4;
+        overflow:hidden;
+        margin-left: 18vh;
+    }
+
+    .divIntGrids a{
+        text-decoration: none;
+        color: black;
+    }
+
+#video {
+    position: absolute;
+    margin-top: 12.5vh;
+    margin-bottom: 14vh;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 77vh;
+    z-index: -10;
+    visibility: visible;
+    opacity: 1;
+    }
+
+.divIntGrid a img:hover{
+    width: 25vw;
+    height:25vh;
+    border-radius: 50%; 
+    border:solid 4px black; 
+    opacity: 1;
+     
+}
+
+
+/*Formulario*/
+
+.formflex{
+    width: 100vw;
+    height: 77vh;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: "uno uno uno" 
+                         "uno uno uno" 
+                         "uno uno uno";
+    align-items: center;
+    position: absolute;
+    top: 10;
+    left: 0;
+}
+
+.divform{
+    background-color: #b5b5b5;    
+    border: solid 3px #b5b5b5;    ;
+    width: 30vw;
+    height:20vh;
+    background-color: #d5d8d8;
+    text-align: center;
+    padding-top: 1%;
+    margin-left: 1vw;
+    border-radius: 2vw;
+
+}
+
+.divform:hover{ 
+    
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+    opacity: 1;
+    -webkit-transition:all 2s ease; /* Safari y Chrome */
+    -moz-transition:all 2s ease; /* Firefox */
+    -o-transition:all 2s ease; /* IE 9 */
+    -ms-transition:all 2s ease; /* Opera */
+    animation: cambiarColorForm infinite;
+    animation-duration: 5s ;
+}
+
+.divform input{
+    border-radius: 5px;
+    border-color: rgb(0, 139, 109);
+    width: 20vw;
+}
+
+.divform label{
+    font-family: 'Macondo'; 
+    font-size: 3vh;
+}
+
+.divform .btn{
+    background-color: white;
+    font-family: 'Macondo'; 
+    font-size: 2vh;
+    border: solid 2px black;
+}
+
+/* Cambiar de color */
+
+@keyframes cambiarColorForm {
+    
+    from{
+        background-color: #070707;
+        color: white;
+    }  
+
+   to {
+        background-color: #f8f8f8; 
+        color: black;  
+    }
+  }
+
+@keyframes cambiarColor {
+    20% {
+        background-color: #fdfdfd;
+        color: black;
+    }  
+    55%{
+        background-color: #496f72;
+    }
+  
+    90%{
+        background-color: #161616;
+        color:white   
+    }
+  }
+ 
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+/* Eventos */
+
+.btn:hover{
+    border-radius: 5px;
+    background-color: turquoise;
+    color: white;
+    font-weight:bolder;
+    border:solid 2px black;
+    height: 6vh;
+    width: 25vw;
+    font-size: 1.5rem;
+}
+
+/* Cambiar color de firma */
+
+footer{
+    background-color: rgb(201, 212, 212);
+    animation: cambiarColor 15s infinite alternate;
+    -webkit-animation: cambiarColor 15s linear infinite alternate;
+    -moz-animation: cambiarColor 15s linear infinite alternate;
+    -o-animation: cambiarColor 15s linear infinite alternate;
+    height:10vh;   
+    text-align: center;
+}
+
+footer h3{
+    font-size: 1.8vw;
+}
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 240px) and (max-width:640px){ 
+    /*Gral*/
+
+    footer h3 {
+        font-size: 0.6em;
+    }
+
+    .text p {
+        font-size: 0.6em;
+    }
+
+    /*Form Contacto*/
+	.formflex{			
+        font-size: 1em;
+	}
+
+    .formflex label{
+        font-size: 0.9em;
+    }
+
+    /* Index */
+
+    .divGridPrincipal{
+        font-size: 1em;
+    }
+
+    .divIntGrids{
+        margin-left: 2vh;
+        font-size: 1em;
+    }
+
+    .divGrid{
+        font-size: 1em;
+    } 
+
+    .divIntGrids h3{
+        font-size: 0.6em;
+    }
+
+    .divIntGrids strong{
+        font-size: 1em;
+    }
+
+    .divIntGrids p{
+        font-size: 0.33em;
+    }
+
+    /* Repositorios */
+
+    .divIntGrid p{
+        font-size: 0.43em;
+    }
+
+    .divIntGrid a img{
+        width: 24vw;
+        height:8vh;         
+    }
+
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width:960px){ 
+    /*Gral*/
+
+    footer h3 {
+        font-size: 1.2em;
+    }
+
+    .text p {
+        font-size: 1.2em;
+    }
+
+    /*Form Contacto*/
+	.formflex{			
+        font-size: 2em;
+	}
+
+    .formflex label{
+        font-size: 1.8em;
+    }
+
+    /* Index */
+
+    .divGridPrincipal{
+        font-size: 1em;
+    }
+
+    .divIntGrids{
+        margin-left: 2vh;
+        font-size: 1em;
+    }
+
+    .divGrid{
+        font-size: 2em;
+    } 
+
+    .divIntGrids h3{
+        font-size: 0.6em;
+    }
+
+    .divIntGrids strong{
+        font-size: 0.8em;
+    }
+
+    .divIntGrids p{
+        font-size: 0.7em;
+    }
+
+    .divIntGrids img{
+        width: 98%;
+        height: 98%;
+    }
+
+    /* Repositorios */
+
+    .divIntGrid p{
+        font-size: 0.86em;
+    }
+
+    .divIntGrid a img{
+        width: 25vw;
+        height:11vh;         
+    }
+
+}
+
+
+
+@media screen and (min-width: 961px) and (max-width:1240px){ 
+    /*Gral*/
+
+    footer h3 {
+        font-size: 2.3em;
+    }
+
+    .text p {
+        font-size: 2.3em;
+    }
+
+    /*Form Contacto*/
+	.formflex{			
+        font-size: 2em;
+	}
+
+    .formflex label{
+        font-size: 1.8em;
+    }
+    
+
+    /* Index */
+
+
+    .divIntGrids{
+        margin-left: 5vh;
+        font-size: 1em;
+        width: 30vw;
+    }
+
+    .divIntGrids h3{
+        font-size: 1.6em;
+    }
+
+    .divIntGrids strong{
+        font-size: 1.1em;
+    }
+
+    .divIntGrids p{
+        font-size: 1.1em;
+    }
+
+    .divIntGrids img{
+        width: 98%;
+        height: 98%;
+    }
+
+    /* Repositorios */
+
+    .divIntGrid p{
+        font-size: 1.3em;
+    }
+    .divIntGrid li{
+        font-size: 1.3em;
+
+    }
+    .divIntGrid a img{
+        width: 27vw;
+        height:12vh;         
+    }
+
+}
